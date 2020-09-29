@@ -76,9 +76,7 @@ bash run_experiments.sh
 ```
 
 This will run the subspace search from StreamHiCS with default parameters. 
-The results are then available in `StreamHiCS/results`. 
-
-To run the outlier detection based on those subspaces, see the experiment `StreamHiCSminers` in the section SGMRD. 
+The results are then available in `StreamHiCS/results`. To run the outlier detection based on those subspaces, see the experiment `StreamHiCSminers` in the section SGMRD. 
 
 ### xStream
 
@@ -87,7 +85,7 @@ To run the outlier detection based on those subspaces, see the experiment `Strea
 #### Build 
 
 ```
-cd xStream/cpp
+cd xStream/cpp/
 make clean
 make optimized
 ```
