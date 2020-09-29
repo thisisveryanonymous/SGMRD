@@ -1,0 +1,8 @@
+python score_and_test_xstream.py --dataset ~/data/RSHash-preprocessed/kddcup99.svm
+python score_and_test_xstream.py --dataset ~/data/RSHash-preprocessed/activity.svm
+
+
+TODO:
+python score_and_test_xstream.py --dataset ~/data/SGMRD-synth/example_10_data.svm
+python score_and_test_xstream.py --dataset ~/data/SGMRD-synth/example_20_data.svm
+python score_and_test_xstream.py --dataset ~/data/SGMRD-synth/example_50_data.svm
