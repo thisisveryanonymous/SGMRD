@@ -42,7 +42,6 @@ object StreamHiCSminers extends Experiment {
 
   def run(): Unit = {
     info(s"Starting experiment - ${this.getClass.getSimpleName}")
-    info(s"Parameters:")
     info(s"nrep: $nRep")
     info(s"Subspaces: ${subspacepaths mkString ","}")
     info(s"Started on: ${java.net.InetAddress.getLocalHost.getHostName}")
@@ -72,7 +71,7 @@ object StreamHiCSminers extends Experiment {
     for {
       rep <- 0 until nRep
     } {
-      info(s"This is repetition $rep")
+      //info(s"This is repetition $rep")
       for {
         ref <- data
       } {

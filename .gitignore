@@ -123,9 +123,9 @@ experiments/*
 !experiments/.keep
 
 # Notebook Checkpoints
-visualize/plots/*.pdf
+# visualize/plots/*.pdf
 !visualize/plots/.keep
-visualize/*.pdf
+# visualize/*.pdf
 visualize/.ipynb_checkpoints/
 .ipynb_checkpoints/
 

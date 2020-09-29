@@ -63,7 +63,6 @@ object SGMRDminers extends Experiment {
 
   def run(): Unit = {
     info(s"Starting com.anonymous.experiments - ${this.getClass.getSimpleName}")
-    info(s"Parameters:")
     info(s"nrep: $nRep")
     //info(s"Datasets: ${data.map(_.id) mkString ","}")
     info(s"Subspaces: ${subspacepaths mkString ","}")
@@ -94,7 +93,7 @@ object SGMRDminers extends Experiment {
     for {
       rep <- 0 until nRep
     } {
-      info(s"This is repetition $rep")
+      //info(s"This is repetition $rep")
       for {
         ref <- data
       } {

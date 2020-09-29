@@ -32,8 +32,7 @@ object SGMRDsearchers extends Experiment with SubspaceSearchTerminology {
   val m = 100
 
   def run(): Unit = {
-    info(s"Starting com.anonymous.experiments - ${this.getClass.getSimpleName} - ${data.map(_.category).distinct mkString ","}")
-    info(s"Parameters:")
+    info(s"Starting com.anonymous.experiments - ${this.getClass.getSimpleName}")
     info(s"nrep: $nRep")
     info(s"Datasets: ${data.map(_.id) mkString ","}")
     info(s"Started on: ${java.net.InetAddress.getLocalHost.getHostName}")

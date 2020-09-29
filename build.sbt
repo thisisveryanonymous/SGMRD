@@ -10,7 +10,7 @@ crossScalaVersions := Seq("2.11.8", "2.12.8") // prefix with "+" to perform for 
 //javaOptions += "-Xms10G"
 
 fork in run := true
-scalacOptions ++= Seq("-feature", "-unchecki ed", "-deprecation")
+scalacOptions ++= Seq("-feature", "-unchecked", "-deprecation")
 
 libraryDependencies += "de.lmu.ifi.dbs.elki" % "elki" % "0.7.5"
 libraryDependencies += "de.lmu.ifi.dbs.elki" % "elki-logging" % "0.7.5"
@@ -33,15 +33,5 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.2"
-
-assemblyJarName in assembly := s"${name.value}-${version.value}.jar"
-test in assembly := {}
-
-assemblyMergeStrategy in assembly ~= { old => {
-  case PathList("META-INF", "datagenerator", xs@_*) => MergeStrategy.first
-  case x if x.startsWith("Main") => MergeStrategy.first
-  case x => old(x)
-}
-}
 
 javacOptions ++= Seq("-encoding", "UTF-8")

@@ -37,13 +37,13 @@ object Data {
   } catch {
     case _: Throwable => {
       try {
-        val fullpath2 = currentdir + "/git/docLOF/data" + path
+        val fullpath2 = currentdir + "/git/data" + path
         val s = scala.io.Source.fromFile(fullpath2)
         s.close()
         fullpath2
       } catch {
         case _: Throwable => {
-          val message = s"Tried ${currentdir + "/data" + path} and ${currentdir + "/git/docLOF/data" + path}"
+          val message = s"Tried ${currentdir + "/data" + path} and ${currentdir + "/git/data" + path}"
           throw new Error(message)
         }
       }

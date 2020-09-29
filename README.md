@@ -1,13 +1,15 @@
 <meta name="robots" content="noindex">
 
-# SGMRD (Streaming Greedy Maximum Random Deviation)
+# SGMRD 
+# Streaming Greedy Maximum Random Deviation
 
 Welcome to this anonymous GitHub repository for the paper ```Efficient Subspace Search in Data Streams```. 
 You will find all the required code, data, and documentation to reproduce the results from our study. 
 This repository will be de-anonymised after acceptance of the paper. 
 
 This repository is released under the AGPLv3 license. Please see the [LICENSE.md](LICENSE.md) file. 
-See the README of the subfolders `StreamHICS` and `xStream` for information about the licensing of those units. 
+
+See the README of the subfolders `StreamHiCS` and `xStream` for information about the licensing of those units. 
 
 ## Data
 
@@ -32,7 +34,7 @@ In case you need to adjust the amount of memory assigned to the JVM, you can set
 
 ## Reproducing the experiments
 
-The results of the experiments are stored in separate folders in `experiments/`. 
+The results of the experiments are stored in `.csv` files in separate folders in `experiments/`.
 
 ### SGMRD
 
@@ -69,7 +71,7 @@ sbt "run experiments.StreamHiCSminers"
                     or [OpenJDK 8](http://openjdk.java.net/install/))
 
 ```
-cd StreamHiCS
+cd StreamHiCS/
 bash run_experiments.sh
 ```
 

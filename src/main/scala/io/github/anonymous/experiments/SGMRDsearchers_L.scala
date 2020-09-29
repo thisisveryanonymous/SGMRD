@@ -34,8 +34,7 @@ object SGMRDsearchers_L extends Experiment with SubspaceSearchTerminology {
   val m = 100
 
   def run(): Unit = {
-    info(s"Starting com.anonymous.experiments - ${this.getClass.getSimpleName} - ${data.map(_.category).distinct mkString ","}")
-    info(s"Parameters:")
+    info(s"Starting com.anonymous.experiments - ${this.getClass.getSimpleName}")
     info(s"nrep: $nRep")
     info(s"Datasets: ${data.map(_.id) mkString ","}")
     info(s"Started on: ${java.net.InetAddress.getLocalHost.getHostName}")
@@ -48,7 +47,7 @@ object SGMRDsearchers_L extends Experiment with SubspaceSearchTerminology {
     for {
       rep <- 0 until nRep
     } {
-      info(s"This is repetition $rep")
+      //info(s"This is repetition $rep")
 
       val outliersearchers: ParVector[DataRef => SGMRD] = ParVector(
         //SGMRD(_, ks, 0.9, SelectAll(), windowsize, stepsize, parallelize=0, monitoring = true), // golden baseline
